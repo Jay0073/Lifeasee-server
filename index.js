@@ -37,6 +37,14 @@ const requestConfig = {
     encoding: "LINEAR16",
     sampleRateHertz: 16000,
     languageCode: "en-US", // Change if needed
+    model: 'default', 
+    useEnhanced: true, // Use enhanced model if available
+    speechContexts: [
+      {
+        phrases: ['specific', 'terms', 'related', 'to', 'your', 'application'], 
+      },
+    ],
+    enableWordTimeOffsets: true, // Optional: Get word time offsets
     enableAutomaticPunctuation: true, // Optional: Add punctuation
   },
   interimResults: true, // Get interim results for faster feedback
