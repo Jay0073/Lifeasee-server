@@ -8,9 +8,7 @@ const path = require("path");
 const { Writable } = require("stream"); // Import Writable
 
 // Configure credentials (Make sure the path is correct)
-// const credentialsPath = path.join(__dirname, "southern-frame-458507-a8-e3452fa080b5.json");
-const credentialsPath =
-  "C:\\Users\\voutl\\OneDrive\\Documents\\Projects\\southern-frame-458507-a8-e3452fa080b5.json";
+const credentialsPath = path.join(__dirname, "southern-frame-458507-a8-e3452fa080b5.json");
 
 try {
   if (!require("fs").existsSync(credentialsPath)) {
